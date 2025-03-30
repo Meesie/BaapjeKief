@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaapjeKief Gimma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-left">
+            <img src="images/header-logo.png" alt="Logo" class="logo">
+        </div>
+        <h1>BaapjeKief Gimma</h1>
+        <div class="logo-right">
+            <img src="images/header-logo.png" alt="Logo" class="logo">
+        </div>
+    </header>
+
+    <div id="buttonContainer">
+        <button id="startBtn">Start spel</button>
+        <button id="regelsBtn">Regels</button>
+    </div>
+ 
+    <div id="regelsPopup" class="popup">
+        <div class="popup-content">
+            <h2>Spelregels</h2>
+            <p>🎮 Hoe speel je BaapjeKief?</p>
+            <p>1. 💨 Neem een pof</p>
+            <p>2. ✍️ Geef antwoord op het onderwerp met je letter</p>
+            <p>3. 🔄 Pass de Jay door, de volgende speler begint met de laatste letter van jouw antwoord!</p>
+            <p>📜 Regels:</p>
+            <p>1. ✅ Standaard 1 pof per beurt</p>
+            <p>2. 🔢 Je mag 2 poffen nemen als je antwoord begint en eindigt met dezelfde letter</p>
+            <p>3. 🔁 Je mag 3 poffen nemen als je antwoord omgekeerd hetzelfde is (bijv. 'pop')</p>
+            <p>4. 🚫 Geen antwoord is Jilla (beurt overslaan)</p>
+            <p>5. ❌ Je mag elk woord maar een keer zeggen</p>
+            <button id="sluitRegelsBtn">❌ Regels Sluiten</button>
+        </div>
+    </div>
+
+    <div id="watermark">®BaapjeKief 2025</div>
+    <div id="letterDisplay"></div>
+    <div id="cd3s"></div>
+    <div id="vraagDisplay"></div>
+    <div id="cd30s"></div>
+    <button id="volgendeVraagBtn" style="display: none;">Volgende vraag</button>
+    <p id="eindText" style="display: none;">
+        Je hebt het niet gered. Je gaat Jilla!!
+    </p>    
+    <button id="gaDoorBtn" style="display: none;">Ga door</button>
+    <script src="script.js"></script>
+</body>
+</html>
+ 
